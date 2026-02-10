@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { MdArrowDownward } from "react-icons/md";
 import { LuGithub } from "react-icons/lu";
 import { LuLinkedin } from "react-icons/lu";
@@ -140,19 +141,30 @@ export default function Home() {
       </section>
 
       <section id="contato" className="max-w-full bg-branco py-10 px-10 md:px-20 lg:px-30">
-        <div className="text-center">
+        <div className="text-center mb-10">
           <p className="text-sm lg:text-base text-preto/60">Vamos Trabalhar Juntos</p>
           <h2 className="text-4xl lg:text-6xl font-bold">
             Entre em
             <br />
             <span className="italic text-roxo">Contato</span>
           </h2>
-          <p>Tem um projeto em mente? Vamos conversar sobre como posso ajudar a transformar suas ideias em realidade.</p>
+          <p className="mt-4 text-preto/70 md:w-2/3 mx-auto">
+            Tem um projeto em mente? Clique no botão abaixo e fale comigo direto pelo WhatsApp!
+          </p>
         </div>
-        <div>
-          
+
+        <div className="flex justify-center">
+          <a
+          href="https://wa.me/5579996839277?text=Olá,+Herbert!+Quero+conversar+sobre+um+projeto."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-roxo text-branco font-bold py-4 px-8 rounded-full text-lg hover:scale-105 transition-transform duration-300"
+          >
+            Falar no WhatsApp
+          </a>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
