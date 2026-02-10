@@ -82,7 +82,7 @@ export default function Home() {
             />
           </div>
           <div className="p-4">
-            <h3 className="text-2xl font-bold text-preto group-hover:text-roxo transition-colors">Projeto 1</h3>
+            <h3 className="text-2xl font-bold text-preto group-hover:text-roxo transition-colors">Aplicação Festival da Mandioca</h3>
             <p className="text-preto/70 mt-2">A aplicação Festival da Mandioca tem como objetivo ser uma plataforma cultural e histórica da cidade de Lagarto, reunindo conteúdos que valorizam a memória, as tradições e a identidade local, ao mesmo tempo em que oferece informações atuais e úteis para a população e visitantes.</p>
           </div>
           </a>
@@ -102,7 +102,7 @@ export default function Home() {
             />
           </div>
           <div className="p-4">
-            <h3 className="text-2xl font-bold text-preto group-hover:text-roxo transition-colors">Projeto 2</h3>
+            <h3 className="text-2xl font-bold text-preto group-hover:text-roxo transition-colors">Projeto educacional</h3>
             <p className="text-preto/70 mt-2">Projeto educacional interativo desenvolvido com Next.js, voltado para alunos do 4º ano do Ensino Fundamental, com foco em Português e Matemática.</p>
           </div>
           </a>
