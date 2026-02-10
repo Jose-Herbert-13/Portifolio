@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { MdArrowDownward } from "react-icons/md";
@@ -22,8 +23,8 @@ export default function Home() {
           </h1>
           <p className="text-lg lg:text-xl text-preto/60 md:w-3/5">Transformo ideias em produtos digitais únicos através de design inovador e código limpo. Especializado em criar interfaces que encantam e funcionam perfeitamente.</p>
           <div className="inline-flex flex-col md:flex-row gap-4 mt-4">
-            <button className="flex w-full md:max-w-50 bg-preto text-branco rounded-full p-2 text-md justify-center cursor-pointer hover:scale-105">Ver Projetos  <MdArrowDownward /></button>
-            <button className="flex w-full md:max-w-50 bg-branco rounded-full p-2 text-md justify-center cursor-pointer shadow-lg hover:bg-roxo hover:text-branco hover:scale-105">Sobre Mim</button>
+            <button className="flex w-full md:max-w-50 bg-preto text-branco rounded-full p-2 text-md justify-center cursor-pointer hover:scale-105"><NavLink href="#projetos" label="Ver Projetos"/><MdArrowDownward /></button>
+            <button className="flex w-full md:max-w-50 bg-branco rounded-full p-2 text-md justify-center cursor-pointer shadow-lg hover:bg-roxo hover:text-branco hover:scale-105"><NavLink href="#sobre" label="Sobre Mim"/></button>
           </div>
           <div className="inline-flex gap-4 mt-4">
             <a className="text-xl rounded-full p-2 cursor-pointer hover:bg-roxo hover:text-branco hover:scale-105" href="https://github.com/Jose-Herbert-13"><LuGithub /></a>
@@ -167,4 +168,17 @@ export default function Home() {
       <Footer />
     </div>
   );
+
+  // funções auxiliares
+    function NavLink({ 
+        href, 
+        label, 
+        onClick,
+    } : {
+        href: string; 
+        label: string;
+        onClick?: () => void;
+    }) {
+        return <Link href={href} onClick={onClick}>{label}</Link>
+    }
 }
