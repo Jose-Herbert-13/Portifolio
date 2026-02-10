@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         <div className="col-span-1 gap-6 md:flex lg:block justify-center items-center lg:mx-20 lg:mt-10">
           <div className="bg-branco p-7 m-4 w-60 h-30 border-2 border-preto/10 shadow-md shadow-preto/10 rounded-xl hover:scale-105">
-            <h3 className="text-5xl text-roxo font-bold">10+</h3>
+            <h3 className="text-5xl text-roxo font-bold">3+</h3>
             <p className="text-md">Projetos Concluídos</p>
           </div>
           <div className="bg-branco p-7 m-4 w-60 h-30 border-2 border-preto/10 shadow-md shadow-preto/10 rounded-xl hover:scale-105">
@@ -53,7 +53,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="projetos" className="max-w-full bg-branco grid grid-cols-1 lg:grid-cols-2 py-10 px-10 md:px-20 lg:px-30">
+
+      <section id="projetos" className="max-w-full bg-branco grid grid-cols-1 lg:grid-cols-2 py-10 px-10 md:px-20 lg:px-30 gap-6">
         <div>
           <p className="text-sm lg:text-base text-preto/60">Trabalhos Selecionados</p>
           <h2 className="text-4xl lg:text-6xl font-bold">
@@ -62,9 +63,52 @@ export default function Home() {
             <span className="italic text-roxo">Destaque</span>
           </h2>
         </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 col-span-2">
+          <a
+          href="https://aplicacao-festival.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group bg-preto/5 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+          <div className="relative w-full h-48">
+            <Image
+            src="/imgs/projeto_festival.png"
+            alt="Projeto 1"
+            fill
+            className="object-cover"
+            />
+          </div>
+          <div className="p-4">
+            <h3 className="text-2xl font-bold text-preto group-hover:text-roxo transition-colors">Projeto 1</h3>
+            <p className="text-preto/70 mt-2">A aplicação Festival da Mandioca tem como objetivo ser uma plataforma cultural e histórica da cidade de Lagarto, reunindo conteúdos que valorizam a memória, as tradições e a identidade local, ao mesmo tempo em que oferece informações atuais e úteis para a população e visitantes.</p>
+          </div>
+          </a>
+
+          <a
+          href="https://estudos-fundamental.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group bg-preto/5 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+          <div className="relative w-full h-48">
+            <Image
+            src="/imgs/projeto_estudos_fundamental.png"
+            alt="Projeto Estudos Fundamental"
+            fill
+            className="object-cover"
+            />
+          </div>
+          <div className="p-4">
+            <h3 className="text-2xl font-bold text-preto group-hover:text-roxo transition-colors">Projeto 2</h3>
+            <p className="text-preto/70 mt-2">Projeto educacional interativo desenvolvido com Next.js, voltado para alunos do 4º ano do Ensino Fundamental, com foco em Português e Matemática.</p>
+          </div>
+          </a>
+        </div>
       </section>
+
       <section id="skills" className="max-w-full bg-preto/5 py-10 px-10 md:px-20 lg:px-30">
-        <div>
+        <div className="text-center mb-10">
           <p className="text-sm lg:text-base text-preto/60">O Que Eu Faço</p>
           <h2 className="text-4xl lg:text-6xl font-bold">
             Skills &
@@ -72,8 +116,30 @@ export default function Home() {
             <span className="italic text-roxo">Especialidades</span>
           </h2>
         </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {[
+            "JavaScript",
+            "TypeScript",
+            "Java",
+            "Python",
+            "React",
+            "Next.js",
+            "Tailwind",
+            "CSS",
+            "HTML",
+          ].map((skill) => (
+            <div
+            key={skill}
+            className="bg-branco p-6 rounded-xl shadow-md shadow-preto/10 text-center hover:scale-105 transition-transform duration-300 cursor-default"
+            >
+              <h3 className="text-2xl font-bold text-preto">{skill}</h3>
+            </div>
+          ))}
+        </div>
       </section>
-      <section id="skills" className="max-w-full bg-branco py-10 px-10 md:px-20 lg:px-30">
+
+      <section id="contato" className="max-w-full bg-branco py-10 px-10 md:px-20 lg:px-30">
         <div className="text-center">
           <p className="text-sm lg:text-base text-preto/60">Vamos Trabalhar Juntos</p>
           <h2 className="text-4xl lg:text-6xl font-bold">
