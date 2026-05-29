@@ -19,10 +19,10 @@ export default function Projetos() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <ProjetoCard
-          href="https://aplicacao-festival.vercel.app/"
-          image="/imgs/projeto_festival.png"
-          title="Aplicação Festival da Mandioca"
-          description="Plataforma cultural e histórica da cidade de Lagarto."
+          href="https://mero.morea-ifs.org/"
+          image="/imgs/projeto_mero.png"
+          title="Mapa de Espaços e Representação de Orientação (MERO)"
+          description="MERO, um mapa interativo do IFS Campus Lagarto, desenvolvido com Next.js e Leaflet para facilitar a navegação dos alunos."
         />
 
         <ProjetoCard
