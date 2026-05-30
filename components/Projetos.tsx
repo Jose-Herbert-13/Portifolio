@@ -26,6 +26,13 @@ export default function Projetos() {
         />
 
         <ProjetoCard
+          href="https://trancadura.morea-ifs.org/"
+          image="/imgs/projeto_trancadura.png"
+          title="Trancadura"
+          description="Um substituto para o modelo tradicional de acesso por um ecossistema IoT seguro, rastreável e de baixo custo."
+        />
+
+        <ProjetoCard
           href="https://estudos-fundamental.vercel.app/"
           image="/imgs/projeto_estudos_fundamental.png"
           title="Projeto Educacional"
